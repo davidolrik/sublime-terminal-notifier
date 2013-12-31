@@ -19,6 +19,7 @@ class Notify(threading.Thread):
             "/usr/local/bin",
             "/opt/local/bin"
         ]
+        paths.extend(glob.glob(os.environ['HOME']+"/.rvm/gems/*/bin/terminal-notifier"))
         paths.extend(glob.glob("/usr/local/Cellar/gems/*/bin"))
         paths.extend(os.environ['PATH'].split(":"))
 
