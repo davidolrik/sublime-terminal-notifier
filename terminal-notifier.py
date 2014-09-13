@@ -17,7 +17,8 @@ class Notify(threading.Thread):
             os.environ['HOME']+"/bin",
             os.environ['HOME']+"/.rbenv/shims",
             "/usr/local/bin",
-            "/opt/local/bin"
+            "/opt/local/bin",
+            "/usr/bin"
         ]
         paths.extend(glob.glob(os.environ['HOME']+"/.rvm/gems/*/wrappers"))
         paths.extend(glob.glob("/usr/local/Cellar/gems/*/bin"))
